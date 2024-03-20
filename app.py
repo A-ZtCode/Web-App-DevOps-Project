@@ -1,10 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for
 from sqlalchemy import create_engine, Column, Integer, String, DateTime
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker, declarative_base  # updated line
 import pyodbc
 import os
+
 
 # Initialise Flask App
 app = Flask(__name__)
