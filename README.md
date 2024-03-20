@@ -107,23 +107,23 @@ CMD ["python", "app.py"]
 ```
 #### Step 2: Building the Docker Image
 ```Bash
-docker build -t devops-project:v1.0 .
+docker build -t devapp-project:v1.0 .
 ```
 #### Step 3: Tagging the Image
 ```Bash
-docker tag devops-project:v1.0 oliv11111/devops-project:v1.0
+docker tag devapp-project:v1.0 cycya/devapp-project:v1.0
 ```
 #### Step 4: Pushing to Docker Hub
 ```Bash
-docker push oliv11111/devops-project:v1.0
+docker push cycya/devapp-project:v1.0
 ```
 #### Step 5: Testing Push (Pulling from DockerHub)
 ```Bash
-docker pull oliv11111/devops-project:v1.0
+docker pull cycya/devapp-project:v1.0
 ```
 #### Step 6: Running Locally
 ```Bash
-docker run -p 5000:5000 devops-project:v1.0
+docker run -p 5001:5000 devapp-project:v1.0
 ```
 ####  Step 7: Clean Up
 ```Bash
@@ -139,6 +139,7 @@ docker rmi <image-id>
 ## Contributors 
 
 - [Maya Iuga]([https://github.com/yourusername](https://github.com/maya-a-iuga))
+- [Mercy Azeta]([https://github.com/yourusername](https://github.com/A-ZtCode))
 
 ## License
 
